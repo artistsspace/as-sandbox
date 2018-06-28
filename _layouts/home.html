@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
-{% for page in site.data.pages.entries %}
-  {{page.url}}<br>
+
+{% for page in site.pages %}
+  <a href="{{page.url}}">{{page.title}}</a><br>
 {% endfor %}
